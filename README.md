@@ -1,6 +1,7 @@
-# Indoor-Routing (need to update this readme)
+# United States Shortest Path Map
 This javascript gives routes, using a set of markers (to create a graph), placed using geojson data, for one section of Hartsfield–Jackson Atlanta International Airport
-The script has 43 markers placed around the map and a graph is constructed using these markers:
+The script has N markers placed around the map and a graph is constructed using these markers:
+* N = the number of nodes that is placed in the data.js file
 ```javascript
 var graph = new DirectedGraph();
 graph.addVertex('i', {'j': weight(data.features[i].geometry["coordinates"], data.features[j].geometry["coordinates"]),..});
@@ -24,7 +25,7 @@ To construct this, we use Google's Simple GeoJSON Editor https://google-develope
 
 The endpoint is then collected from the user by the use of a prompt
 ```javascript
-var end_point = prompt("Please enter the end point(between 1-43):");
+var end_point = prompt("Please enter the end point(between N):");
 ```
 This variable is then passed shortest path finding function which then calculates all the intermediate vertices to be traversed using Dijkstra's Shortest Path Algorithm which creates a tree of shortest paths from the starting vertex, the source, to all other points in the graph.
 The pseudocode for Dijkstra's algorithm is given below.
@@ -105,3 +106,4 @@ The resulting map using an example input of 13 is
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDftx56s3ut_WMxWlhP38KsCKgyHYgQOJo&callback=initMap">
 ```
 2.The script has only 43 markers. In order to add more we need to edit the variable **data** using the Google GeoJson editor and add the appropriate vertices and edges.
+

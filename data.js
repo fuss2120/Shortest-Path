@@ -1,4 +1,4 @@
-var data = { 
+var data = {
 	"type": "FeatureCollection",
 	"features": [{
 		"type": "Feature",
@@ -702,4 +702,3 @@ var data = {
 	    }
 	]
     }
-

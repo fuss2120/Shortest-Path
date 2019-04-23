@@ -2,13 +2,43 @@ var graph = new DirectedGraph(); //Required by connector
 var INFINITY = 1 / 0;
 var x_path = [];
 
+var cities = ["Milwaukee","Madison","Chicago","South Bend","Ann Arbor",
+              "Detroit" ,"Toledo","Cleveland","Dayton","Columbus",
+              "Pittsburgh","Niagara Falls","Boston","Plymouth","Providence",
+              "New York","Annapolis","Atlantic City","Baltimore","Charleston",
+              "Jacksonville","Orlando","Fort Lauderdale","Miami","Fort Myers",
+              "Tampa","Atlanta","Nashville","Louisville","Cincinnati",
+              "Indianapolis","St. Louis","Memphis","New Orleans","Houston",
+              "Austin","El Paso","Tucson","San Diego","Long Beach","Anaheim",
+              "Los Angeles","Hollywood","San Jose","Mountain View",
+              "San Francisco","Napa","Sacramento","Portland","Seattle",
+              "Anchorage","Las Vegas","Salt Lake City","Scottsdale","Phoenix",
+              "Boulder","Denver","Colorado Springs","Albuquerque",
+              "Oklahoma City","Manhattan","Topeka","Kansas City","Omaha",
+              "Des Moines","Cedar Falls","Iowa City","Minnetonka",
+              "Minneapolis","Little Rock"];
+
+
 function route_setup(){
 
-    var start_point = parseInt(document.getElementById("start_point").value);
-    var end_point = parseInt(document.getElementById("end_point").value);
+    var start_point_name = document.getElementById("start_point").value;
+    var end_point_name = document.getElementById("end_point").value;
 
     var trip_cost = parseInt(document.getElementById("trip_cost").value);
     var trip_duration = parseInt(document.getElementById("trip_duration").value);
+
+    var start_point = null;
+    var end_point = null;
+    for (var i = 0; i < cities.length; i++) {
+      if (start_point_name == cities[i]){
+        start_point = i;
+      }
+    }
+    for (var i = 0; i < cities.length; i++) {
+      if (end_point_name == cities[i]){
+        end_point = i;
+      }
+    }
 
 
     connector();

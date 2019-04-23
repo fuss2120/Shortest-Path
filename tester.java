@@ -9,16 +9,16 @@ public class tester {
 
 	public static void main(String[] args) {
 		// define .csv file
-		String fileName = "/Users/Joey/Documents/workspace/Optimization/city_coordinates_revised.csv";
+		String fileName = "/Users/Joey/Documents/workspace/Shortest_Path/city_coordinates_revised.csv";
 		File file = new File(fileName);
-		
+
 		ArrayList<String> cities = new ArrayList<String>();
 		ArrayList<Float> latitudes = new ArrayList<Float>();
 		ArrayList<Float> longitudes = new ArrayList<Float>();
-		
+
 		String line = "";
 		BufferedReader inputStream = null;
-		
+
 		try {
 			// read from file using Scanner
 			inputStream = new BufferedReader(new FileReader(file));
@@ -26,12 +26,12 @@ public class tester {
 			while ((line = inputStream.readLine()) != null) {
 				// split the line by comma
 				String[] parts = line.split(",");
-				
+
 				// retrieving specific parts from parts array
 				String city = parts[0];
 				String latitude = parts[1];
 				String longitude = parts[2];
-				
+
 				// put specific parts into corresponding ArrayList
 				cities.add(city);
 				latitudes.add(Float.parseFloat(latitude));
@@ -50,15 +50,15 @@ public class tester {
 				}
 			}
 		}
-		
-		
+
+
 		//
 		// printing to correct file format
 		//
-		
+
 		System.out.println("var data = { \n\t\"type\": \"FeatureCollection\",");
 		System.out.println("\t\"features\": [{");
-		
+
 		for (int i = 0; i < cities.size(); i++){
 			System.out.println("\t\t\"type\": \"Feature\",");
 			System.out.println("\t\t\"geometry\": {");
@@ -78,6 +78,6 @@ public class tester {
 				System.out.println("    }");
 			}
 		}
-		
+
 	}
 }

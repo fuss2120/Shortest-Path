@@ -604,16 +604,6 @@ var data = {
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
-			"coordinates": [-96.57167,
-			    39.18361
-			]
-		},
-		"properties": {}
-	    },
-	    {
-		"type": "Feature",
-		"geometry": {
-			"type": "Point",
 			"coordinates": [-95.68902,
 			    39.055824
 			]
@@ -654,16 +644,6 @@ var data = {
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
-			"coordinates": [-92.44531,
-			    42.5349
-			]
-		},
-		"properties": {}
-	    },
-	    {
-		"type": "Feature",
-		"geometry": {
-			"type": "Point",
 			"coordinates": [-91.53017,
 			    41.66113
 			]
@@ -686,16 +666,6 @@ var data = {
 			"type": "Point",
 			"coordinates": [-93.26501,
 			    44.977753
-			]
-		},
-		"properties": {}
-	    },
-	    {
-		"type": "Feature",
-		"geometry": {
-			"type": "Point",
-			"coordinates": [-92.2896,
-			    34.74648
 			]
 		},
 		"properties": {}

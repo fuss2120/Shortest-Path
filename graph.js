@@ -1,16 +1,19 @@
 function connector(){
   graph.addVertex('0', {
     '1': weight(data.features[0].geometry["coordinates"], data.features[1].geometry["coordinates"]),
-    '2': weight(data.features[0].geometry["coordinates"], data.features[2].geometry["coordinates"]),
+    '2': weight(data.features[0].geometry["coordinates"], data.features[2].geometry["coordinates"])
   });
 graph.addVertex('1', {
   '49': weight(data.features[1].geometry["coordinates"], data.features[49].geometry["coordinates"]),
-  '0': weight(data.features[1].geometry["coordinates"], data.features[1].geometry["coordinates"])
+  '0': weight(data.features[1].geometry["coordinates"], data.features[1].geometry["coordinates"]),
+  '66': weight(data.features[1].geometry["coordinates"], data.features[66].geometry["coordinates"]),
+  '64': weight(data.features[1].geometry["coordinates"], data.features[64].geometry["coordinates"])
 });
 graph.addVertex('2', {
   '3': weight(data.features[2].geometry["coordinates"], data.features[3].geometry["coordinates"]),
   '4': weight(data.features[2].geometry["coordinates"], data.features[4].geometry["coordinates"]),
-  '31': weight(data.features[2].geometry["coordinates"], data.features[31].geometry["coordinates"])
+  '31': weight(data.features[2].geometry["coordinates"], data.features[31].geometry["coordinates"]),
+  '64': weight(data.features[2].geometry["coordinates"], data.features[64].geometry["coordinates"])
 });
 graph.addVertex('3', {
   '4': weight(data.features[3].geometry["coordinates"], data.features[4].geometry["coordinates"]),
@@ -160,7 +163,9 @@ graph.addVertex('31', {
   '2': weight(data.features[31].geometry["coordinates"], data.features[2].geometry["coordinates"]),
   '30': weight(data.features[31].geometry["coordinates"], data.features[30].geometry["coordinates"]),
   '29': weight(data.features[31].geometry["coordinates"], data.features[29].geometry["coordinates"]),
-  '32': weight(data.features[31].geometry["coordinates"], data.features[32].geometry["coordinates"])
+  '32': weight(data.features[31].geometry["coordinates"], data.features[32].geometry["coordinates"]),
+  '64': weight(data.features[31].geometry["coordinates"], data.features[64].geometry["coordinates"]),
+  '61': weight(data.features[31].geometry["coordinates"], data.features[61].geometry["coordinates"])
 });
 graph.addVertex('32', {
   '31': weight(data.features[32].geometry["coordinates"], data.features[31].geometry["coordinates"]),
@@ -179,12 +184,19 @@ graph.addVertex('34', {
 });
 graph.addVertex('35', {
   '36': weight(data.features[36].geometry["coordinates"], data.features[26].geometry["coordinates"]),
-  '34': weight(data.features[34].geometry["coordinates"], data.features[34].geometry["coordinates"])
+  '34': weight(data.features[34].geometry["coordinates"], data.features[34].geometry["coordinates"]),
+  '59': weight(data.features[34].geometry["coordinates"], data.features[59].geometry["coordinates"]),
+  '57': weight(data.features[34].geometry["coordinates"], data.features[57].geometry["coordinates"]),
+  '58': weight(data.features[34].geometry["coordinates"], data.features[58].geometry["coordinates"]),
+  '56': weight(data.features[34].geometry["coordinates"], data.features[56].geometry["coordinates"])
 });
 graph.addVertex('36', {
   '37': weight(data.features[36].geometry["coordinates"], data.features[37].geometry["coordinates"]),
   '53': weight(data.features[36].geometry["coordinates"], data.features[53].geometry["coordinates"]),
-  '35': weight(data.features[36].geometry["coordinates"], data.features[35].geometry["coordinates"])
+  '35': weight(data.features[36].geometry["coordinates"], data.features[35].geometry["coordinates"]),
+  '56': weight(data.features[36].geometry["coordinates"], data.features[56].geometry["coordinates"]),
+  '58': weight(data.features[36].geometry["coordinates"], data.features[58].geometry["coordinates"]),
+  '55': weight(data.features[36].geometry["coordinates"], data.features[55].geometry["coordinates"])
 });
 graph.addVertex('37', {
   '36': weight(data.features[37].geometry["coordinates"], data.features[36].geometry["coordinates"]),
@@ -265,21 +277,25 @@ graph.addVertex('51', {
   '42': weight(data.features[51].geometry["coordinates"], data.features[42].geometry["coordinates"]),
   '41': weight(data.features[51].geometry["coordinates"], data.features[41].geometry["coordinates"]),
   '54': weight(data.features[51].geometry["coordinates"], data.features[54].geometry["coordinates"]),
-  '53': weight(data.features[51].geometry["coordinates"], data.features[53].geometry["coordinates"])
+  '53': weight(data.features[51].geometry["coordinates"], data.features[53].geometry["coordinates"]),
+  '55': weight(data.features[51].geometry["coordinates"], data.features[55].geometry["coordinates"])
 });
 graph.addVertex('52', {
-  '51': weight(data.features[52].geometry["coordinates"], data.features[51].geometry["coordinates"])
+  '51': weight(data.features[52].geometry["coordinates"], data.features[51].geometry["coordinates"]),
+  '55': weight(data.features[52].geometry["coordinates"], data.features[55].geometry["coordinates"])
 });
 graph.addVertex('53', {
   '54': weight(data.features[53].geometry["coordinates"], data.features[54].geometry["coordinates"]),
   '51': weight(data.features[53].geometry["coordinates"], data.features[51].geometry["coordinates"]),
-  '37': weight(data.features[53].geometry["coordinates"], data.features[37].geometry["coordinates"])
+  '37': weight(data.features[53].geometry["coordinates"], data.features[37].geometry["coordinates"]),
+  '55': weight(data.features[53].geometry["coordinates"], data.features[55].geometry["coordinates"])
 });
 graph.addVertex('54', {
   '38': weight(data.features[54].geometry["coordinates"], data.features[38].geometry["coordinates"]),
   '37': weight(data.features[54].geometry["coordinates"], data.features[37].geometry["coordinates"]),
   '51': weight(data.features[54].geometry["coordinates"], data.features[51].geometry["coordinates"]),
-  '53': weight(data.features[54].geometry["coordinates"], data.features[53].geometry["coordinates"])
+  '53': weight(data.features[54].geometry["coordinates"], data.features[53].geometry["coordinates"]),
+  '55': weight(data.features[54].geometry["coordinates"], data.features[55].geometry["coordinates"])
 });
 graph.addVertex('55', {});
 graph.addVertex('56', {});

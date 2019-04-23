@@ -3,12 +3,13 @@ var INFINITY = 1 / 0;
 var x_path = [];
 
 function route_setup(){
-    
+
+    var start_point = parseInt(document.getElementById("start_point").value);
     var end_point = parseInt(document.getElementById("end_point").value);
-    
-    
+
+
     connector();
-    console.log("crossed conn"); 
+    console.log("crossed conn");
     var out = djikstra(graph, '0');
     console.log("crossed djikstra");
     for (i = 0; i < data.features.length; i++) {

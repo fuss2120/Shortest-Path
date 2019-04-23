@@ -14,8 +14,8 @@ var data = {
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
-			"coordinates": [-86.74833,
-			    34.699257
+			"coordinates": [-89.4012,
+			    43.07319
 			]
 		},
 		"properties": {}
@@ -134,8 +134,8 @@ var data = {
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
-			"coordinates": [-93.45551,
-			    45.01052
+			"coordinates": [-70.6673,
+			    41.9584
 			]
 		},
 		"properties": {}

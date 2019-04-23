@@ -39,14 +39,20 @@
     <br>
     <input type="text" id="trip_duration">
     </br>
-    Enter the starting point:
+    Enter the starting city:
     <br>
     <input type="text" id="start_point">
     </br>
-    Enter the marker-id:
+    Enter the destination city:
     <br>
     <input type="text" id="end_point">
     <button id="getRoute">submit</button>
+    </br>
+    <br>
+    <p id="path_paragraph">Path: </p>
+    <p id="budget_paragraph"> </p>
+    <p id="time_paragraph"> </p>
+    </br>
 
 
     <div id="map" style="position:fixed; left: 10%;"></div>
@@ -54,6 +60,7 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDftx56s3ut_WMxWlhP38KsCKgyHYgQOJo&callback=initMap">
     </script>
     <script>
+
         var customLabel = {
             terminal: {
                 label: 'T'
@@ -144,7 +151,9 @@
             var submit_button = document.getElementById('getRoute');
 
             google.maps.event.addDomListener(submit_button, 'click', function() {
-                path_temp = route_setup();
+                function_stuff = route_setup();
+                path_temp = function_stuff[0];
+                var constraints = function_stuff[1];
                 console.log(path_temp);
                 for(var i=0;i<path_temp.length;++i){
                     debugger
@@ -152,7 +161,21 @@
                     var line = Path.getPath();
                     line.push(latLng_temp);
                 }
-                alert("Hello alert box test"+path_temp.toString());
+                var new_paragraph = document.getElementById('paragraph');
+                var path = path_temp[0];
+                for (var i = 1; i < path_temp.length; i++) {
+                  if ((i+1) == path_temp.length) {
+                    path = path + path_temp[i];
+                  }
+                  else {
+                    path = path + " -> " + path_temp[i];
+                  }
+                }
+                //new_paragraph = new_paragraph + path;
+                new_paragraph = "Path: "+path;
+                document.getElementById("path_paragraph").innerHTML = new_paragraph;
+                document.getElementById("budget_paragraph").innerHTML = "Budget: $"+constraints[0];
+                document.getElementById("time_paragraph").innerHTML = "Time: "+constraints[1]+" days";
             });
             debugger
             console(line.getPath());

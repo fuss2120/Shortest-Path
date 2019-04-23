@@ -61,7 +61,9 @@ function route_setup(){
         lng: data.features[end_point].geometry.coordinates[0]
     });
 
-    return x_path;
+    var constraints = [trip_cost, trip_duration];
+
+    return [x_path, constraints];
 }
 
 function DirectedGraph() {

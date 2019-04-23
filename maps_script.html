@@ -154,6 +154,7 @@
                 function_stuff = route_setup();
                 path_temp = function_stuff[0];
                 var constraints = function_stuff[1];
+                var city_names_ = function_stuff[2];
                 console.log(path_temp);
                 for(var i=0;i<path_temp.length;++i){
                     debugger
@@ -162,15 +163,25 @@
                     line.push(latLng_temp);
                 }
                 var new_paragraph = document.getElementById('paragraph');
-                var path = path_temp[0];
+                /*var path = Object.values(path_temp[0])[0];
                 for (var i = 1; i < path_temp.length; i++) {
                   if ((i+1) == path_temp.length) {
-                    path = path + path_temp[i];
+                    path = path + Object.values(path_temp[i]);
                   }
                   else {
-                    path = path + " -> " + path_temp[i];
+                    path = path + " -> " + Object.values(path_temp[i]);
+                  }
+                }*/
+                var path = city_names_[0];
+                for (var i = 0; i < city_names_.length; i++){
+                  if ((i+1) == city_names_.length) {
+                    path = path + city_names_[i];
+                  }
+                  else {
+                    path = path + " -> " + city_names_[i];
                   }
                 }
+                console.log(city_names_.length);
                 //new_paragraph = new_paragraph + path;
                 new_paragraph = "Path: "+path;
                 document.getElementById("path_paragraph").innerHTML = new_paragraph;

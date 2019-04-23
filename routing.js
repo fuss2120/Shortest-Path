@@ -40,6 +40,7 @@ function route_setup(){
       }
     }
 
+    var city_names = [];
 
     connector();
     console.log("crossed conn");
@@ -53,6 +54,7 @@ function route_setup(){
                     lat: data.features[x_i].geometry.coordinates[1],
                     lng: data.features[x_i].geometry.coordinates[0]
                 });
+                city_names.push(cities[x_i]);
             }
         }
     }
@@ -60,10 +62,11 @@ function route_setup(){
         lat: data.features[end_point].geometry.coordinates[1],
         lng: data.features[end_point].geometry.coordinates[0]
     });
+    city_names.push(cities[end_point]);
 
     var constraints = [trip_cost, trip_duration];
 
-    return [x_path, constraints];
+    return [x_path, constraints, city_names];
 }
 
 function DirectedGraph() {

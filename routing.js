@@ -13,7 +13,7 @@ function route_setup(){
 
     connector();
     console.log("crossed conn");
-    var out = djikstra(graph, '0');
+    var out = djikstra(graph, start_point);
     console.log("crossed djikstra");
     for (i = 0; i < data.features.length; i++) {
         for (j = 0; j < out.shortestPaths[end_point].length; j++) {

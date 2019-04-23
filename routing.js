@@ -7,6 +7,9 @@ function route_setup(){
     var start_point = parseInt(document.getElementById("start_point").value);
     var end_point = parseInt(document.getElementById("end_point").value);
 
+    var trip_cost = parseInt(document.getElementById("trip_cost").value);
+    var trip_duration = parseInt(document.getElementById("trip_duration").value);
+
 
     connector();
     console.log("crossed conn");

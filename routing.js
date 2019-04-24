@@ -50,32 +50,64 @@ function route_setup(){
 
     var city_names = [];
 
-    connector();
-    console.log("crossed conn");
-    var out = djikstra(graph, start_point);
-    console.log("crossed djikstra");
-    for (i = 0; i < data.features.length; i++) {
-        for (j = 0; j < out.shortestPaths[end_point].length; j++) {
-            if (String(i) == out.shortestPaths[end_point][j]) {
-                var x_i = i;
-                x_path.push({
-                    lat: data.features[x_i].geometry.coordinates[1],
-                    lng: data.features[x_i].geometry.coordinates[0]
-                });
-                city_names.push(cities[x_i]);
-            }
-        }
+    if(start_point < end_point){
+      connector();
+      console.log("crossed conn");
+      var out = djikstra(graph, start_point);
+      console.log("crossed djikstra");
+      for (i = 0; i < data.features.length; i++) {
+          for (j = 0; j < out.shortestPaths[end_point].length; j++) {
+              if (String(i) == out.shortestPaths[end_point][j]) {
+                  var x_i = i;
+                  x_path.push({
+                      lat: data.features[x_i].geometry.coordinates[1],
+                      lng: data.features[x_i].geometry.coordinates[0]
+                  });
+                  city_names.push(cities[x_i]);
+              }
+          }
+      }
+      x_path.push({
+          lat: data.features[end_point].geometry.coordinates[1],
+          lng: data.features[end_point].geometry.coordinates[0]
+      });
+      city_names.push(cities[end_point]);
+      var constraints = [trip_cost, trip_duration];
+
+      return [x_path, constraints, city_names];
+    }else {
+      end_point = 51 - end_point;
+      start_point = 51 - start_point;
+
+      connector2();
+      console.log("crossed conn");
+      var out = djikstra(graph, start_point);
+      console.log("crossed djikstra");
+      for (i = 0; i < data2.features.length; i++) {
+          for (j = 0; j < out.shortestPaths[end_point].length; j++) {
+              if (String(i) == out.shortestPaths[end_point][j]) {
+                  var x_i = i;
+                  x_path.push({
+                      lat: data2.features[x_i].geometry.coordinates[1],
+                      lng: data2.features[x_i].geometry.coordinates[0]
+                  });
+                  city_names.push(cities_reversed[x_i]);
+              }
+          }
+      }
+      x_path.push({
+          lat: data.features[end_point].geometry.coordinates[1],
+          lng: data.features[end_point].geometry.coordinates[0]
+      });
+      city_names.push(cities_reversed[end_point]);
+      var constraints = [trip_cost, trip_duration];
+
+      return [x_path, constraints, city_names];
     }
-    x_path.push({
-        lat: data.features[end_point].geometry.coordinates[1],
-        lng: data.features[end_point].geometry.coordinates[0]
-    });
-    city_names.push(cities[end_point]);
 
-    var constraints = [trip_cost, trip_duration];
 
-    return [x_path, constraints, city_names];
 }
+
 
 function DirectedGraph() {
     this.vertices = {};

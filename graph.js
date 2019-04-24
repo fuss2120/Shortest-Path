@@ -11,7 +11,7 @@ graph.addVertex('1', {
 });
 graph.addVertex('2', {
   '3': weight(data.features[2].geometry["coordinates"], data.features[3].geometry["coordinates"]),
-  '4': weight(data.features[2].geometry["coordinates"], data.features[4].geometry["coordinates"]),
+  //'4': weight(data.features[2].geometry["coordinates"], data.features[4].geometry["coordinates"]),
   '31': weight(data.features[2].geometry["coordinates"], data.features[31].geometry["coordinates"]),
   '64': weight(data.features[2].geometry["coordinates"], data.features[64].geometry["coordinates"])
 });

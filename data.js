@@ -1,6 +1,7 @@
 var data = {
 	"type": "FeatureCollection",
 	"features": [{
+//0
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -11,6 +12,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//1
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -21,6 +23,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//2
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -31,6 +34,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//3
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -41,6 +45,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//4
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -51,6 +56,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//5
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -61,6 +67,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//6
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -71,6 +78,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//7
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -81,6 +89,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//8
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -91,6 +100,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//9
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -101,6 +111,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//10
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -111,6 +122,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//11
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -121,6 +133,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//12
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -131,6 +144,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//13
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -141,6 +155,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//14
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -151,6 +166,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//15
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -161,6 +177,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//16
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -171,6 +188,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//17
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -181,6 +199,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//18
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -191,6 +210,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//19
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -201,6 +221,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//20
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -211,6 +232,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//21
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -221,6 +243,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//22
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -231,6 +254,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//23
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -241,6 +265,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//24
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -251,6 +276,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//25
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -261,6 +287,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//26
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -271,6 +298,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//27
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -281,6 +309,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//28
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -291,6 +320,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//29
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -301,6 +331,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//30
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -311,6 +342,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//31
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -321,6 +353,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//32
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -331,6 +364,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//33
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -341,6 +375,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//34
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -351,6 +386,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//35
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -361,6 +397,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//36
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -371,6 +408,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//37
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -381,6 +419,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//38
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -391,6 +430,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//39
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -401,6 +441,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//40
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -411,6 +452,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//41
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -421,6 +463,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//42
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -431,6 +474,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//43
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -441,6 +485,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//44
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -451,6 +496,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//45
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -461,6 +507,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//46
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -471,6 +518,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//47
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -481,6 +529,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//48
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -491,6 +540,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//49
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -501,6 +551,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//50
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -511,6 +562,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//51
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -521,6 +573,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//52
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -531,6 +584,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//53
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -541,6 +595,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//54
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -551,6 +606,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//55
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -561,6 +617,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//56
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -571,6 +628,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//57
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -581,6 +639,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//58
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -591,16 +650,18 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//59
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
-			"coordinates": [-97.516426,
-			    35.46756
+			"coordinates": [-96.57167,
+			    39.18361
 			]
 		},
 		"properties": {}
 	    },
 	    {
+//60
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -611,6 +672,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//61
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -621,6 +683,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//62
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -631,6 +694,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//63
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -641,6 +705,18 @@ var data = {
 		"properties": {}
 	    },
 	    {
+//64
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-92.44531,
+			    42.5349
+			]
+		},
+		"properties": {}
+	    },
+	    {
+//65
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
@@ -651,16 +727,7 @@ var data = {
 		"properties": {}
 	    },
 	    {
-		"type": "Feature",
-		"geometry": {
-			"type": "Point",
-			"coordinates": [-93.46875,
-			    44.921185
-			]
-		},
-		"properties": {}
-	    },
-	    {
+//66
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",

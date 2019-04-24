@@ -15,6 +15,17 @@ var cities = ["Milwaukee", "Madison", "Chicago", "South Bend", "Detroit",
               "Iowa City", "Minneapolis", "Mount Rushmore", "Yellowstone",
               "Oklahoma City", "Grand Canyon"];
 
+var cities_reversed = ["Grand Canyon", "Oklahoma City", "Yellowstone",
+              "Mount Rushmore", "Minneapolis", "Iowa City", "Des Moines",
+              "Omaha", "Kansas City", "Albuquerque", "Denver", "Phoenix",
+              "Salt Lake City", "Las Vegas", "Anchorage", "Seattle", "Portland",
+              "Sacramento", "San Francisco", "San Jose", "Los Angeles",
+              "San Diego", "Tucson", "El Paso", "Austin", "Houston", "New Orleans",
+              "Memphis", "St. Louis","Indianapolis", "Cincinnati", "Louisville",
+              "Nashville", "Atlanta", "Tampa", "Miami", "Orlando", "Jacksonville",
+              "Charleston", "Baltimore", "Atlantic City", "New York", "Boston",
+              "Niagara Falls", "Pittsburgh", "Columbus", "Toledo", "Detroit",
+              "South Bend", "Chicago", "Madison", "Milwaukee"];
 
 function route_setup(){
 

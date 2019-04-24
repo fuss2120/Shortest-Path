@@ -98,7 +98,7 @@ var Path = new google.maps.Polyline({
                         });
 ```
 
-![alt text](https://github.com/fuss2120/Shortest-Path/blob/master/Screen%20Shot%202019-04-23%20at%208.24.02%20PM.png)
+![alt text](https://github.com/fuss2120/Shortest-Path/blob/master/Screen%20Shot%202019-04-23%20at%2011.46.17%20PM.png)
 
 ## Note
 1.In order to use the script, the user must request for an API - Key and replace it at:

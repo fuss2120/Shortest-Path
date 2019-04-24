@@ -2,21 +2,18 @@ var graph = new DirectedGraph(); //Required by connector
 var INFINITY = 1 / 0;
 var x_path = [];
 
-var cities = ["Milwaukee","Madison","Chicago","South Bend","Ann Arbor",
-              "Detroit" ,"Toledo","Cleveland","Dayton","Columbus",
-              "Pittsburgh","Niagara Falls","Boston","Plymouth","Providence",
-              "New York","Annapolis","Atlantic City","Baltimore","Charleston",
-              "Jacksonville","Orlando","Fort Lauderdale","Miami","Fort Myers",
-              "Tampa","Atlanta","Nashville","Louisville","Cincinnati",
-              "Indianapolis","St. Louis","Memphis","New Orleans","Houston",
-              "Austin","El Paso","Tucson","San Diego","Long Beach","Anaheim",
-              "Los Angeles","Hollywood","San Jose","Mountain View",
-              "San Francisco","Napa","Sacramento","Portland","Seattle",
-              "Anchorage","Las Vegas","Salt Lake City","Scottsdale","Phoenix",
-              "Boulder","Denver","Colorado Springs","Albuquerque",
-              "Oklahoma City","Manhattan","Topeka","Kansas City","Omaha",
-              "Des Moines","Cedar Falls","Iowa City","Minnetonka",
-              "Minneapolis","Little Rock"];
+var cities = ["Milwaukee", "Madison", "Chicago", "South Bend", "Detroit",
+              "Toledo", "Columbus", "Pittsburgh", "Niagara Falls", "Boston",
+              "New York", "Atlantic City", "Baltimore", "Charleston",
+              "Jacksonville", "Orlando", "Miami", "Tampa", "Atlanta",
+              "Nashville", "Louisville", "Cincinnati", "Indianapolis",
+              "St. Louis", "Memphis", "New Orleans", "Houston", "Austin",
+              "El Paso", "Tucson", "San Diego", "Los Angeles", "San Jose",
+              "San Francisco", "Sacramento", "Portland", "Seattle",
+              "Anchorage", "Las Vegas", "Salt Lake City", "Phoenix",
+              "Denver", "Albuquerque", "Kansas City", "Omaha", "Des Moines",
+              "Iowa City", "Minneapolis", "Mount Rushmore", "Yellowstone",
+              "Oklahoma City", "Grand Canyon"];
 
 
 function route_setup(){

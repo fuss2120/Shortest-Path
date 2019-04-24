@@ -145,7 +145,29 @@ function getShortestPaths(previous, shortestPaths, startVertex, dist) {
 
 function weight(a, b) {
     var R = 6371; // Radius of the earth in km
-    var dLat = deg2rad(b[1] - a[1]); // deg2rad below
+    if (b[1] > a[1]) {
+      var dLat = Math.abs(deg2rad(a[1] - b[1])); // deg2rad below
+      var dLon = Math.abs(deg2rad(a[0] - b[0]));
+      var temp =
+          Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos(deg2rad(a[1])) * Math.cos(deg2rad(b[1])) *
+          Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      var c = 2 * Math.atan2(Math.sqrt(temp), Math.sqrt(1 - temp));
+      var d = R * c; // Distance in km
+      return Math.abs(d);
+    }
+    else {
+      var dLat = Math.abs(deg2rad(b[1] - a[1])); // deg2rad below
+      var dLon = Math.abs(deg2rad(b[0] - a[0]));
+      var temp =
+          Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos(deg2rad(a[1])) * Math.cos(deg2rad(b[1])) *
+          Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      var c = 2 * Math.atan2(Math.sqrt(temp), Math.sqrt(1 - temp));
+      var d = R * c; // Distance in km
+      return Math.abs(d);
+    }
+    /*var dLat = deg2rad(b[1] - a[1]); // deg2rad below
     var dLon = deg2rad(b[0] - a[0]);
     var temp =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
@@ -153,7 +175,7 @@ function weight(a, b) {
         Math.sin(dLon / 2) * Math.sin(dLon / 2);
     var c = 2 * Math.atan2(Math.sqrt(temp), Math.sqrt(1 - temp));
     var d = R * c; // Distance in km
-    return Math.abs(d);
+    return d;*/
 }
 
 function deg2rad(deg) {

@@ -156,7 +156,7 @@ function weight(a, b) {
         Math.sin(dLon / 2) * Math.sin(dLon / 2);
     var c = 2 * Math.atan2(Math.sqrt(temp), Math.sqrt(1 - temp));
     var d = R * c; // Distance in km
-    return d;
+    return Math.abs(d);
 }
 
 function deg2rad(deg) {

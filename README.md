@@ -105,5 +105,5 @@ var Path = new google.maps.Polyline({
 ```javascript
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDftx56s3ut_WMxWlhP38KsCKgyHYgQOJo&callback=initMap">
 ```
-2.The script has only 43 markers. In order to add more we need to edit the variable **data** using the Google GeoJson editor and add the appropriate vertices and edges.
+2.The script has only 67 markers. In order to add more we need to edit the variable **data** using the Google GeoJson editor and add the appropriate vertices and edges.
 
